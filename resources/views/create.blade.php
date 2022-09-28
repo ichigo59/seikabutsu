@@ -22,7 +22,6 @@
             </div>
             <input type="submit" value="投稿する"/>
         </form>
-        <div class='go'>[<a href="/">投稿する</a>]</div>
         <div class="back">[<a href="/">ホームへ戻る</a>]</div>
     </body>
 </html>

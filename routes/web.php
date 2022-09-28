@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PostController@index');
 Route::get('/posts/create', 'PostController@create');
-Route::get('/posts/{post}', 'PostController@show');
 Route::get('/posts/mypage', 'PostController@mypage');
 Route::get('/posts/chat', 'PostController@chat');
-Route::get('/posts/review', 'PostController@creview');
+Route::get('/posts/review', 'PostController@review');
 Route::get('/posts/register', 'PostController@register');
 Route::get('/posts/login', 'PostController@login');
-                 //Q.違いがわからない
+Route::get('/posts/{post}', 'PostController@show');
+                
