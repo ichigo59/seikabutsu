@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Post extends Model
 {
     protected $fillable = [
+        'category',
         'title',
         'body',
     ];
