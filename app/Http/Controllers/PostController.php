@@ -50,6 +50,11 @@ class PostController extends Controller
         return view ('registert');
     }
     
+    public function explanation()
+    {
+        return view ('explanation');
+    }
+    
     public function store(Request $request, Post $post)
     {
     $input = $request['post'];

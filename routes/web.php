@@ -19,6 +19,6 @@ Route::get('/posts/mypage', 'PostController@mypage');
 Route::get('/posts/register', 'PostController@register');
 Route::get('/posts/review', 'PostController@review');
 Route::get('/posts/start', 'PostController@start');
+Route::get('/posts/explanation', 'PostController@explanation');
 Route::get('/posts/{post}', 'PostController@index');
-
 Route::post('/posts', 'PostController@store');
