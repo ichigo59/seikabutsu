@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-        <h1 class="title">My Page</h1>
+        <h1 class="title">マイページ</h1>
         <div class = "post">
             <h2>ID</h2>
                 <h3>12345</h3>
@@ -22,7 +22,7 @@
                 <h3>21</h3>
             <h2>Sex</h2>
                 <h3>female</h3>
-            <h2>Point</h2>
+            <h2>Point</h2>　
             　　<h3>100</h3>
         </div>
             <div class='footer'>[<a href="/">ホームへ戻る</a>]</div>

@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
-        <h1 class="title">Chat</h1>
+        <h1 class="title">チャット</h1>
         <form action="/posts" method="POST">
             {{ csrf_field() }}
         <div class = "post">
