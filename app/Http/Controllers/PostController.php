@@ -15,14 +15,29 @@ class PostController extends Controller
         return view('index')->with(['post' => $post->get()]); 
     }
     
+    public function show(Post $post)
+    {
+        return view('show')->with(['post' => $post]);
+    }
+    
+    public function ichiran(Post $post)
+    {
+        return view('ichiran')->with(['posts' => $post->getPaginateByLimit()]);
+    }
+    
     public function mypage(Post $post)
     {
         return view('mypage')->with(['post' => $post->get()]);
     }
     
-    public function create()                //Q. ->with(['post' => $post->get()]); と書く時とそうでない時の違い
+    public function create()                
     {
         return view ('create');
+    }
+    
+    public function upload()                
+    {
+        return view ('store');
     }
     
     public function login()
@@ -57,8 +72,20 @@ class PostController extends Controller
     
     public function store(Request $request, Post $post)
     {
-    $input = $request['post'];
-    $post->fill($input)->save();
-    return redirect('/posts/' . $post->id);
+        //dd("test");
+        $input = $request['post'];
+        $input += ['user_id' => $request->user()->id]; 
+        $imgname = $request->imgpath->getClientOriginalName();
+        $post['image_path'] = $request->imgpath->storeAs('public',$imgname);
+        $post->fill($input)->save();
+        return redirect('/show/' . $post->id);
+    }
+    
+    public function update(PostRequest $request, Post $post)
+    {
+        $input_post = $request['post'];
+        $input_post += ['user_id' => $request->user()->id];   
+        $post->fill($input_post)->save();
+        return redirect('/posts/' . $post->id);
     }
 }

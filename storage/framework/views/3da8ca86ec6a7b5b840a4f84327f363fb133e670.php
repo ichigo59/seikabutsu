@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-@extends('layouts.app')
 
-@section('content')
-{{Auth::user()->name}}
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<?php $__env->startSection('content'); ?>
+<?php echo e(Auth::user()->name); ?>
+
+
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+        <link rel="stylesheet" href="<?php echo e(asset('css/index.css')); ?>">
         <title>Seikabutsu</title>
         
     </head>
@@ -29,4 +30,5 @@
         
     </body>
 </html>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ec2-user/environment/blog/resources/views/index.blade.php ENDPATH**/ ?>

@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-@extends('layouts.app')
 
-@section('content')
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<?php $__env->startSection('content'); ?>
+
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <body>
         <h1>投稿</h1>
         <form action="/posts" method="POST" enctype="multipart/form-data">
-            @csrf
+            <?php echo csrf_field(); ?>
             <div class="category">
                 <h2>Category</h2>
                 <input type="text" name="post[category]" placeholder="食べ物or建造物or観光地or穴場スポット"/>
@@ -30,9 +30,11 @@
             <input type="submit" value="投稿する"/>
         </form>
         <form action="/store" enctype="multipart/form-data" method="post"> 
-            @csrf
+            <?php echo csrf_field(); ?>
         </form>
             <div class="back"><a href="/">ホームへ戻る</a></div>
     </body>
 </html>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ec2-user/environment/blog/resources/views/create.blade.php ENDPATH**/ ?>
