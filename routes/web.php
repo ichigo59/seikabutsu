@@ -11,14 +11,23 @@
 |
 */
 
-Route::get('/', 'PostController@index');
-Route::get('/posts/chat', 'PostController@chat');
-Route::get('/posts/create', 'PostController@create');
-Route::get('/posts/login', 'PostController@login');
-Route::get('/posts/mypage', 'PostController@mypage');
-Route::get('/posts/register', 'PostController@register');
-Route::get('/posts/review', 'PostController@review');
-Route::get('/posts/start', 'PostController@start');
-Route::get('/posts/explanation', 'PostController@explanation');
-Route::get('/posts/{post}', 'PostController@index');
-Route::post('/posts', 'PostController@store');
+Route::group(['middleware' => ['auth']], function(){
+    Route::get('/', 'PostController@index');
+    Route::get('/show/{post}', 'PostController@show');
+    Route::get('/posts/ichiran', 'PostController@ichiran');
+    Route::get('/posts/chat', 'PostController@chat');
+    Route::get('/posts/create', 'PostController@create');
+    Route::post('/store', 'PostController@upload');
+    Route::get('/posts/login', 'PostController@login');
+    Route::get('/posts/mypage', 'PostController@mypage');
+    Route::get('/posts/register', 'PostController@register');
+    Route::get('/posts/review', 'PostController@review');
+    Route::get('/posts/start', 'PostController@start');
+    Route::get('/posts/explanation', 'PostController@explanation');
+    Route::get('/posts/{post}', 'PostController@index');
+    Route::post('/posts', 'PostController@store');
+    Route::get('/user', 'UserController@index');
+});
+
+Auth::routes();
+
