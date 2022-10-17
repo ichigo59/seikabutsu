@@ -28,9 +28,9 @@
             </form>
 
             <div class="card-body chat-card">
-                <!--<?php $__currentLoopData = $comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>-->
-                <!--<?php echo $__env->make('User.components.comment', ['item' => $item], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>-->
-                <!--<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>-->
+                <?php $__currentLoopData = $comments; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <?php echo $__env->make('User.components.comment', ['item' => $item], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div>
          
             <div class="back"><a href="/">ホームへ戻る</a></div>

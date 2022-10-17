@@ -1,13 +1,22 @@
- .keyword{
-     margin-right:0;
-     margin-left: auto;
- }
-     
- 
- .body {
-   background-color: #87cefa;
+ .index_title_name{
+    text-align:center;
+    color: #FFFAFA;
  }
  
- .text-color {
-   color: #808080;
+ h1{
+  font-size: 60px;
  }
+ 
+ .index_body {
+   background-color: #B3DDE6;
+ }
+ 
+ .index_image{
+   text-align:center;
+ }
+ 
+ .posts{
+  text-align: center;
+   color: #DC143C;
+ }
+
