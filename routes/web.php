@@ -27,6 +27,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/posts/{post}', 'PostController@index');
     Route::post('/posts', 'PostController@store');
     Route::get('/user', 'UserController@index');
+    Route::post('/add', 'PostController@add')->name('add');
 });
 
 Auth::routes();

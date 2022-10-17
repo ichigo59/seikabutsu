@@ -5,15 +5,10 @@
 <?php echo e(Auth::user()->name); ?>
 
 
-<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="<?php echo e(asset('css/index.css')); ?>">
-        <title>Seikabutsu</title>
-        
-    </head>
-    <body>
-        <h1> 世界を旅しよう！(タイトル未定)</h1>
+
+        <div class='body'>
+        <div class='title_name'>
+       <h1> 世界を旅しよう！(タイトル未定)</h1></div>
         <p class='mypage'><a href='/mypage'></a></p>
         <p class='create'><a href='/create'></a></p>
         <p class='chat'><a href='/chat'></a></p>
@@ -28,7 +23,9 @@
         <div class='go'><a href="/posts/chat">チャット</a></div>
         <div class='go'><a href="/posts/explanation">サイト説明</a></div>  
         
-    </body>
-</html>
+        </div>
+        
+   
+   
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ec2-user/environment/blog/resources/views/index.blade.php ENDPATH**/ ?>

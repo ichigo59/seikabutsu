@@ -4,15 +4,10 @@
 @section('content')
 {{Auth::user()->name}}
 
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ asset('css/index.css') }}">
-        <title>Seikabutsu</title>
-        
-    </head>
-    <body>
-        <h1> 世界を旅しよう！(タイトル未定)</h1>
+
+        <div class='body'>
+        <div class='title_name'>
+       <h1> 世界を旅しよう！(タイトル未定)</h1></div>
         <p class='mypage'><a href='/mypage'></a></p>
         <p class='create'><a href='/create'></a></p>
         <p class='chat'><a href='/chat'></a></p>
@@ -27,6 +22,8 @@
         <div class='go'><a href="/posts/chat">チャット</a></div>
         <div class='go'><a href="/posts/explanation">サイト説明</a></div>  
         
-    </body>
-</html>
+        </div>
+        
+   
+   
 @endsection
