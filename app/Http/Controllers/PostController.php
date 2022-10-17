@@ -6,6 +6,8 @@ use App\Category;
 use App\Post;
 use App\Http\Requests\PostRequest;
 use Illuminate\Http\Request;
+use App\Comment;
+use Illuminate\Support\Facades\Auth;
 
 
 class PostController extends Controller
@@ -13,6 +15,7 @@ class PostController extends Controller
     public function index(Post $post)
     {
         return view('index')->with(['post' => $post->get()]); 
+        return view('home', ['comments' => $comments]);
     }
     
     public function show(Post $post)
@@ -52,7 +55,7 @@ class PostController extends Controller
     
     public function chat()
     {
-        return view ('chat');
+        return view ('User/Components/chat');
     }
     
     public function review()
@@ -68,6 +71,17 @@ class PostController extends Controller
     public function explanation()
     {
         return view ('explanation');
+    }
+    
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
+     public function comment()
+    {
+        $comments = Comment::get();
+        return view('home', ['comments' => $comments]);
     }
     
     public function store(Request $request, Post $post)
@@ -87,5 +101,18 @@ class PostController extends Controller
         $input_post += ['user_id' => $request->user()->id];   
         $post->fill($input_post)->save();
         return redirect('/posts/' . $post->id);
+    }
+    
+    public function add(Request $request)
+    {
+        $user = Auth::user();
+        $comment = $request->input('comment');
+        Comment::create([
+            'login_id' => $user->id,
+            'name' => $user->name,
+            'comment' => $comment
+        ]);
+        dd($comment);
+        return redirect()->route('chat');
     }
 }
