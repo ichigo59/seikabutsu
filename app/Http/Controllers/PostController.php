@@ -88,11 +88,23 @@ class PostController extends Controller
     {
         //dd("test");
         $input = $request['post'];
-        $input += ['user_id' => $request->user()->id]; 
-        $imgname = $request->imgpath->getClientOriginalName();
-        $post['image_path'] = $request->imgpath->storeAs('public',$imgname);
         $post->fill($input)->save();
-        return redirect('/show/' . $post->id);
+        //$input += ['user_id' => $request->user()->id]; 
+        //$imgname = $request->imgpath->getClientOriginalName();
+        //$post['image_path'] = $request->imgpath->storeAs('public',$imgname);
+        //$post->fill($input)->save();
+        $image = $request->file('post.image')->storeAs('public/photograph',$art->id.'post.jpeg' );
+        return redirect('/show/' /*. $post->id*/);
+    }
+    
+     public function posts(ArtRequest $request ,toukou $toukou) {
+        $input = $request['toukou'];
+        $toukou->fill($input)->save();
+        
+        $image = $request->file('toukou.image')->storeAs('public/images',$art->id.'post.jpeg' );
+        //ここでurl指定する
+       
+        return redirect('/show/');
     }
     
     public function update(PostRequest $request, Post $post)

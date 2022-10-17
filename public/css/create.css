@@ -1,0 +1,60 @@
+.create_body {
+   background-color: #DB7093;
+ }
+ 
+.create_h1_title{
+    background-color: #FFE4E1;
+}
+
+.create_h1_title{
+    color: #ADD8E6;
+}
+
+.create_h1_title{
+    text-align:center;
+}
+
+.create_category {
+   background-color: #ADD8E6;
+   color: #808080;
+   text-align:center;
+   
+ }
+ 
+ create_h2{
+    font-size: 30px;
+ }
+ 
+ create_h3{
+    font-size: 15px;
+ }
+ 
+ .create_category_form{
+    font-size: 20px;
+    text-align: center;
+ }
+ 
+ .create_title {
+   background-color: #ADD8E6;
+   color: #808080;
+ }
+ 
+ .create_comment{
+   background-color: #ADD8E6;
+   color: #808080;
+ }
+ 
+ .create_photo{
+   background-color: #ADD8E6;
+   font-size: 15px;
+   color: #808080;
+ }
+ 
+ .create_back{
+    background-color: #ADD8E6;
+    font-size: 15px;
+ }
+ 
+ .text-color {
+   color: #808080;
+ }
