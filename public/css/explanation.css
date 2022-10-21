@@ -1,0 +1,37 @@
+ .explanation_all_body {
+   background-color: #DB7093;
+ }
+ 
+ .explanation_h1_title{
+    text-align:center;
+    color: #ADD8E6;
+    background-color: #FFE4E1;
+    font-family: "Yu Gothic";
+    font-size: 50px;
+    font-weight: 600;
+ }
+ 
+ .explanation_body {
+   background-color: #B3DDE6;
+ }
+ 
+ .explanation_h2_title{
+   font-size: 20px;
+   font-weight: 600;
+   color: #696969;
+   font-family: "Yu Gothic";
+ }
+ 
+ explanation_h3{
+   font-size: 15px;
+   color: #808080;
+   font-family: "Yu Gothic";
+ }
+ 
+ .explanation_back{
+   font-size: 15px;
+   font-family: "Yu Gothic";
+ }
+ 
+
+

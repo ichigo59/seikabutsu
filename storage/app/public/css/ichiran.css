@@ -1,0 +1,41 @@
+.ichiran_all_body{
+   background-color: #DB7093;
+}
+
+.ichiran_h1_title{
+   text-align:center;
+   color: #ADD8E6;
+   background-color: #FFE4E1;
+   font-family: "Yu Gothic";
+   font-size: 50px;
+   font-weight: 600;
+}
+
+.ichiran_body{
+   background-color: #B3DDE6;
+}
+
+.toukousyamei{
+   font-size: 20px;
+   font-family: "Yu Gothic";
+   color: #808080;
+}
+
+.ichiran_4_body{
+   font-family: "Yu Gothic";
+   color: #808080;
+}
+
+ichiran_h2{
+   font-size: 25px;
+   font-weight: 600;
+}
+
+ichiran_p{
+   font-size: 40px;
+}
+
+ .ichiran_back{
+   font-size: 15px;
+   font-family: "Yu Gothic";
+ }

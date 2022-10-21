@@ -1,60 +1,82 @@
-.create_body {
-   background-color: #DB7093;
- }
- 
-.create_h1_title{
-    background-color: #FFE4E1;
-}
-
-.create_h1_title{
+.background{
     color: #ADD8E6;
 }
 
+.create_body {
+   background-color: #DB7093;
+ }
+
 .create_h1_title{
+    color: #ADD8E6;
     text-align:center;
+    background-color: #FFE4E1;
+    font-family: "Yu Gothic";
+    font-size: 50px;
+    font-weight: 600;
 }
 
 .create_category {
    background-color: #ADD8E6;
    color: #808080;
    text-align:center;
-   
+   font-family: "Yu Gothic";
  }
  
  create_h2{
     font-size: 30px;
+    font-family: "Yu Gothic";
+    font-weight: 500;
  }
  
  create_h3{
     font-size: 15px;
+    font-family: "Yu Gothic";
+    font-weight: 500;
+ }
+ 
+ create_toukou_h3{
+    font-size: 20px;
+    font-family: "Yu Gothic";
+    font-weight: 500;
  }
  
  .create_category_form{
     font-size: 20px;
     text-align: center;
+    font-family: "Yu Gothic";
  }
  
  .create_title {
    background-color: #ADD8E6;
    color: #808080;
+   font-family: "Yu Gothic";
  }
  
  .create_comment{
    background-color: #ADD8E6;
    color: #808080;
+   font-family: "Yu Gothic";
  }
  
  .create_photo{
    background-color: #ADD8E6;
-   font-size: 15px;
+   font-size: 10px;
    color: #808080;
+   font-family: "Yu Gothic";
+   font-weight: 500;
+ }
+ 
+ .input_type{
+    font-size: 30px; 
  }
  
  .create_back{
     background-color: #ADD8E6;
     font-size: 15px;
+    font-family: "Yu Gothic";
  }
  
  .text-color {
    color: #808080;
+   font-family: "Yu Gothic";
  }
