@@ -26,7 +26,7 @@
             <h2>Sex</h2>
                 <h3>female</h3>
         </div>
-            <div class='footer'>[<a href="/">ホームへ戻る</a>]</div>
+            <div class='footer'><a href="/">ホームへ戻る</a></div>
     </body>
 </html>
 <?php $__env->stopSection(); ?>

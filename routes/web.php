@@ -16,6 +16,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/show/{post}', 'PostController@show');
     Route::get('/posts/ichiran', 'PostController@ichiran');
     Route::get('/posts/chat', 'PostController@chat');
+    Route::get('/posts/home', 'PostController@home');
     Route::get('/posts/create', 'PostController@create');
     Route::post('/store', 'PostController@upload');
     Route::get('/posts/login', 'PostController@login');

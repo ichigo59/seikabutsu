@@ -12,10 +12,27 @@ use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
+    
     public function index(Post $post)
     {
         return view('index')->with(['post' => $post->get()]); 
-        return view('home', ['comments' => $comments]);
+        //return view('home', ['comments' => $comments]);
+    }
+
+    /*public function index()
+    {
+        $comments =Comment::get();
+        //dd($comments);
+        return view('index',
+        ['comments' => $comments]);
+    }*/
+    
+    public function home()
+    {
+        $comments =Comment::get();
+        //dd($comments);
+        return view('home',
+        ['comments' => $comment]);
     }
     
     public function show(Post $post)
@@ -57,6 +74,8 @@ class PostController extends Controller
     {
         return view ('User/Components/chat');
     }
+    
+     
     
     public function review()
     {

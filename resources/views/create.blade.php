@@ -6,7 +6,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <link href="{{ asset('css/create.css') }}" rel="stylesheet">
 
-<div class='create_body'>
+<div class="create_body">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
     </head>
     
         <div class="create_title">
-        <h1 class="create_h1_title">投稿</h1>
+        <h1 class="create_h1_title">・ ・ ・投稿・ ・ ・</h1>
         </div>
         
         <form action="/posts" method="POST" enctype="multipart/form-data">
@@ -48,14 +48,15 @@
             </div>
             
             <div class="create_photo">
-                <input type="file" name="imgpath">
-                <input type="submit" value="投稿する"/>
+                <create_h2>Photographーー</h2>
+                <create_h3><input type="file" name="imgpath"></h3>
             </div>
+                <create_toukou_h3><input type="submit" value="投稿する"/></h3>
         </form>
         <form action="/store" enctype="multipart/form-data" method="post"> 
             @csrf
         </form>
-            <div class="create_back"><a href="/">ホームへ戻る</a></div>
+            <div class="create_back"><a href="/">〖ホームへ戻る〗</a></div>
 </div>
 </html>
 @endsection

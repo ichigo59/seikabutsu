@@ -1,10 +1,27 @@
- .index_title_name{
+.index_title_name{
     text-align:center;
     color: #FFFAFA;
+    background-color: #FFC0CB;
  }
  
- h1{
-  font-size: 60px;
+ index_h1{
+   font-size: 60px;
+   font-weight: 600;
+   font-family: "Yu Gothic";
+ }
+ 
+ index_h2{
+   font-size: 40px;
+   font-weight: 600;
+   font-family: "Yu Gothic";
+ }
+ 
+ .index_all_body{
+   background-color: #E0FFFF;
+ }
+ 
+ .index_title_name{
+   background-color: #FFC0CB;
  }
  
  .index_body {
@@ -17,6 +34,14 @@
  
  .posts{
   text-align: center;
-   color: #DC143C;
+  color: #DC143C;
+ }
+ 
+ .index_button{
+   text-align: center;
+   font-size: 30px;
+   background-color: #FFE4E1;
+   font-family: "Yu Gothic";
+   
  }
 
