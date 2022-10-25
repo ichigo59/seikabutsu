@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-@extends('layouts.app')
-
-@section('content')
 {{Auth::user()->name}}
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 
@@ -11,6 +8,10 @@
         <title>Seikabutsu</title>
     </head>
     
+    <body class="index">
+        @extends('layouts.app')
+
+        @section('content')
     <div class="index_all_body">
         <div class='index_title_name'>
             <index_h1>・ ・ ・ ・ ・ ・　セカタビ　・ ・ ・ ・ ・ ・<h1>
@@ -42,7 +43,5 @@
             </div>  
         </div>
     </div>
-        
-   
-   
-@endsection
+        @endsection
+    </body>

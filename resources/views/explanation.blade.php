@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-@extends('layouts.app')
-
-@section('content')
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <link href="{{ asset('css/explanation.css') }}" rel="stylesheet">
 
@@ -13,6 +10,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
     </head>
+<body class="explanation_body">
+    @extends('layouts.app')
+
+    @section('content')
     
     <div class="explanation_all_body">
         <h1 class="explanation_h1_title">・ ・ ・サイト説明・ ・ ・</h1>
@@ -34,7 +35,9 @@
                 <h3>・返信しよう！</h3>
             </h3>
         <div class='explanation_back'><a href="/">〖ホームへ戻る〗</a></div>
+        </div>
     </div>
     
 </html>
-@endsection
+    @endsection
+</body>

@@ -1,7 +1,11 @@
-.index_title_name{
+.index{
+    background-color: #B3DDE6;  
+}
+    
+ .index_title_name{
     text-align:center;
-    color: #FFFAFA;
-    background-color: #FFC0CB;
+    color: #E0FFFF;
+    background-color: #F5FFFA;
  }
  
  index_h1{
