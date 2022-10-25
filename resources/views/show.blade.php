@@ -5,7 +5,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>Seikabutsu</title>
+        <title>Sekatabi</title>
     </head>
     <body>
         <small>{{ $post->user->name }}</small>

@@ -10,7 +10,7 @@
     font-size: 50px;
     font-weight: 600;
 }
- 
+
 .create{
    background-color: #B3DDE6;
    text-align:center;
@@ -32,7 +32,7 @@
     font-family: "Yu Gothic";
     font-weight: 500;
  }
- 
+
  .create_h4{     /*投稿ボタン*/
     font-size: 20px;
     font-family: "Yu Gothic";
@@ -40,8 +40,14 @@
  }
  
  .create_category_form{
-    margin: 0 auto !important;
-    text-align: center !important;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+ }
+ 
+ .category_form{
     font-size: 20px;
  }
  
@@ -85,6 +91,9 @@
  .create_back{
     font-size: 15px;
     font-family: "Yu Gothic";
+    font-weight: bold;
  }
+ 
+
  
  

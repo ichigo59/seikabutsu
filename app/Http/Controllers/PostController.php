@@ -45,11 +45,6 @@ class PostController extends Controller
         return view('ichiran')->with(['posts' => $post->getPaginateByLimit()]);
     }
     
-    public function mypage(Post $post)
-    {
-        return view('mypage')->with(['post' => $post->get()]);
-    }
-    
     public function create()                
     {
         return view ('create');
@@ -72,10 +67,14 @@ class PostController extends Controller
     
     public function chat()
     {
-        return view ('User/Components/chat');
+        $comments = Comment::get();
+        return view ('User/Components/chat')-> with(['comments' => $comments]) ;
     }
     
-     
+    public function comment()
+    {
+        return view ('User/Components/comment');
+    }
     
     public function review()
     {
@@ -97,29 +96,23 @@ class PostController extends Controller
         $this->middleware('auth');
     }
     
-     public function comment()
-    {
-        $comments = Comment::get();
-        return view('home', ['comments' => $comments]);
-    }
-    
     public function store(Request $request, Post $post)
     {
-        //dd("test");
         $input = $request['post'];
+        $image = $request->file('post.image')->storeAs('public/photograph',$art->id.'post.jpg' );
+        dd($image);
         $post->fill($input)->save();
         //$input += ['user_id' => $request->user()->id]; 
         //$imgname = $request->imgpath->getClientOriginalName();
         //$post['image_path'] = $request->imgpath->storeAs('public',$imgname);
         //$post->fill($input)->save();
-        $image = $request->file('post.image')->storeAs('public/photograph',$art->id.'post.jpeg' );
+        
         return redirect('/show/' /*. $post->id*/);
     }
     
      public function posts(ArtRequest $request ,toukou $toukou) {
         $input = $request['toukou'];
         $toukou->fill($input)->save();
-        
         $image = $request->file('toukou.image')->storeAs('public/images',$art->id.'post.jpeg' );
         //ここでurl指定する
        
@@ -136,14 +129,15 @@ class PostController extends Controller
     
     public function add(Request $request)
     {
+        
         $user = Auth::user();
-        $comment = $request->input('comment');
+        $comment = $request->input('message');
         Comment::create([
             'login_id' => $user->id,
             'name' => $user->name,
             'comment' => $comment
         ]);
-        dd($comment);
-        return redirect()->route('chat');
+        
+        return redirect('/posts/chat/');
     }
 }
