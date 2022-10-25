@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Seikabutsu</title>
+        <title>Sekatabi</title>
     </head>
     
     <body class="ichiran_body">

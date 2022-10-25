@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="create.css">
-        <title>Seikabutsu</title>
+        <title>Sekatabi</title>
     </head>
     
     <body class="create">
@@ -26,7 +26,7 @@
                 </h2>
                 
                         <div class="create_category_form">
-                            <label for="sel01" class="col-md-4 col-form-label text-md-right"></label>
+                            
                                 <style class ="create_style">
                                     category_form{width: 200px; height: 30px;}
                                     
@@ -36,6 +36,7 @@
                                 <option value="2" selected>建造物</option>
                                 <option value="3" selected>観光地</option>
                                 <option value="4" selected>穴場スポット</option>
+                                
                             </select>
                         </div>
                 
@@ -76,7 +77,7 @@
                 <?php echo csrf_field(); ?>
             </form>
             
-            <div class="create_back">
+            <div class="create_back" >
                 <a href="/">〖ホームへ戻る〗</a>
             </div>
             
