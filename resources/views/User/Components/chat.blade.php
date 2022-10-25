@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-@extends('layouts.app')
-
-@section('content')
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <link href="{{ asset('css/chat.css') }}" rel="stylesheet">
     <head>
@@ -13,7 +10,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/chat.css">
     </head>
-    <body>
+<body>
+    @extends('layouts.app')
+
+    @section('content')
         <h1 class="title">・ ・ ・チャット・ ・ ・</h1>
             <form method="POST" action="{{route('add')}}">
                 @csrf
@@ -67,6 +67,6 @@
     </div>
          
     <div class="back"><a href="/">ホームへ戻る</a></div>
-    </body>
 </html>
 @endsection
+</body>

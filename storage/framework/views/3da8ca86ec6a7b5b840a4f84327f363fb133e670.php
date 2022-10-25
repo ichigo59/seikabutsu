@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-
-<?php $__env->startSection('content'); ?>
 <?php echo e(Auth::user()->name); ?>
 
 <link href="<?php echo e(asset('css/index.css')); ?>" rel="stylesheet">
@@ -12,6 +9,10 @@
         <title>Seikabutsu</title>
     </head>
     
+    <body class="index">
+        
+
+        <?php $__env->startSection('content'); ?>
     <div class="index_all_body">
         <div class='index_title_name'>
             <index_h1>・ ・ ・ ・ ・ ・　セカタビ　・ ・ ・ ・ ・ ・<h1>
@@ -43,8 +44,6 @@
             </div>  
         </div>
     </div>
-        
-   
-   
-<?php $__env->stopSection(); ?>
+        <?php $__env->stopSection(); ?>
+    </body>
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ec2-user/environment/blog/resources/views/index.blade.php ENDPATH**/ ?>
