@@ -20,7 +20,6 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/posts/create', 'PostController@create');
     Route::post('/store', 'PostController@upload');
     Route::get('/posts/login', 'PostController@login');
-    Route::get('/posts/mypage', 'PostController@mypage');
     Route::get('/posts/register', 'PostController@register');
     Route::get('/posts/review', 'PostController@review');
     Route::get('/posts/start', 'PostController@start');

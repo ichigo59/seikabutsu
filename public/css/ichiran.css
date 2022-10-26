@@ -26,16 +26,18 @@
    color: #808080;
 }
 
-ichiran_h2{
+.ichiran_h2{
    font-size: 25px;
    font-weight: 600;
 }
 
-ichiran_p{
+.ichiran_p{
    font-size: 40px;
 }
 
  .ichiran_back{
    font-size: 15px;
+   font-weight: bold;
    font-family: "Yu Gothic";
+   background-color: #B3DDE6;
  }

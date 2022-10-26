@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-@extends('layouts.app')
-
-@section('content')
 {{Auth::user()->name}}
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Seikabutsu</title>
+        <title>Sekatabi</title>
     </head>
     
+    <body class="index">
+        @extends('layouts.app')
+
+        @section('content')
     <div class="index_all_body">
         <div class='index_title_name'>
-            <index_h1>・ ・ ・ ・ ・ ・　セカタビ　・ ・ ・ ・ ・ ・<h1>
-            <index_h2>～世界を旅しよう！～</h2>
+            <h1 class="index_h1">・ ・ ・ ・ ・ ・　セカタビ　・ ・ ・ ・ ・ ・<h1>
+            <h2 clas="index_h2">～世界を旅しよう！～</h2>
         </div>
-                <p class='mypage'><a href='/mypage'></a></p>
                 <p class='create'><a href='/create'></a></p>
                 <p class='chat'><a href='/chat'></a></p>
                 <p class='home'><a href='/home'></a></p>
@@ -34,7 +34,6 @@
             </div>
         
             <div class='index_button'>
-                <a href="/posts/mypage">〖マイページ〗</a>
                 <a href="/posts/create">〖投稿〗</a>
                 <a href="/posts/ichiran">〖投稿一覧〗</a>
                 <a href="/posts/chat">〖チャット〗</a>
@@ -42,7 +41,5 @@
             </div>  
         </div>
     </div>
-        
-   
-   
-@endsection
+        @endsection
+    </body>
