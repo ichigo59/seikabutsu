@@ -15,8 +15,8 @@
         <?php $__env->startSection('content'); ?>
     <div class="index_all_body">
         <div class='index_title_name'>
-            <index_h1>・ ・ ・ ・ ・ ・　セカタビ　・ ・ ・ ・ ・ ・<h1>
-            <index_h2>～世界を旅しよう！～</h2>
+            <h1 class="index_h1">・ ・ ・ ・ ・ ・　セカタビ　・ ・ ・ ・ ・ ・<h1>
+            <h2 clas="index_h2">～世界を旅しよう！～</h2>
         </div>
                 <p class='create'><a href='/create'></a></p>
                 <p class='chat'><a href='/chat'></a></p>

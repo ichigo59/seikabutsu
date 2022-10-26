@@ -8,13 +8,13 @@
     background-color: #F5FFFA;
  }
  
- index_h1{
+ .index_h1{
    font-size: 60px;
    font-weight: 600;
    font-family: "Yu Gothic";
  }
  
- index_h2{
+ .index_h2{
    font-size: 40px;
    font-weight: 600;
    font-family: "Yu Gothic";
@@ -49,3 +49,4 @@
    
  }
 
+ 

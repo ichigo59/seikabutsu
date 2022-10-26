@@ -96,28 +96,18 @@ class PostController extends Controller
         $this->middleware('auth');
     }
     
-    public function store(Request $request, Post $post)
+    
+    public function store(PostRequest $request ,Post $post) 
     {
         $input = $request['post'];
-        $image = $request->file('post.image')->storeAs('public/photograph',$art->id.'post.jpg' );
-        dd($image);
         $post->fill($input)->save();
-        //$input += ['user_id' => $request->user()->id]; 
-        //$imgname = $request->imgpath->getClientOriginalName();
-        //$post['image_path'] = $request->imgpath->storeAs('public',$imgname);
-        //$post->fill($input)->save();
         
-        return redirect('/show/' /*. $post->id*/);
-    }
-    
-     public function posts(ArtRequest $request ,toukou $toukou) {
-        $input = $request['toukou'];
-        $toukou->fill($input)->save();
-        $image = $request->file('toukou.image')->storeAs('public/images',$art->id.'post.jpeg' );
-        //ここでurl指定する
+        $image = $request->file('post.imgpath')->storeAs('public/photograph',$post->id.'post.jpeg' );
+        
        
         return redirect('/show/');
     }
+
     
     public function update(PostRequest $request, Post $post)
     {

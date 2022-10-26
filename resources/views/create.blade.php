@@ -26,11 +26,6 @@
                 </h2>
                 {{--<div class="form-group row">--}}
                         <div class="create_category_form">
-                            
-                                <style class ="create_style">
-                                    category_form{width: 200px; height: 30px;}
-                                    
-                                </style>
                             <select class="category_form" id="sel01" name="sel01">
                                 <option value="1">食べ物</option>
                                 <option value="2" selected>建造物</option>
@@ -65,7 +60,7 @@
                     ・ ・ Photograph ・ ・
                 </h2>
                 <h3 class ="create_h3">
-                    <input type="file" name="imgpath">
+                    <input type="file" name="post[imgpath]" accept=".jpg,.jpeg,.png">
                 </h3>
             </div>
                 
