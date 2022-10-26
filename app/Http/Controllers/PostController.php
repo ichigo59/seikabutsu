@@ -119,7 +119,6 @@ class PostController extends Controller
     
     public function add(Request $request)
     {
-        
         $user = Auth::user();
         $comment = $request->input('message');
         Comment::create([
