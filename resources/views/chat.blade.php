@@ -18,12 +18,12 @@
             <form method="POST" action="{{route('add')}}">
                 @csrf
                 
-                <div class="chat-container row justify-content-center">
+    <div class="chat-container row justify-content-center">
     <div class="chat-area">
         <div class="card">
             <div class="card-header">Comment</div>
             <div class="card-body chat-card">
-                
+                @include
                 
             </div>
         </div>
