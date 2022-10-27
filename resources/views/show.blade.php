@@ -20,8 +20,7 @@
     
         <div class="content">
             <div class=" content_post">
-                <img src=" {{ asset($post->image_path)}}">
-                {{ $post->image_path }}
+                <img src=" {{ asset($post->imgpath)}}">
             </div>  
         </div>
         </div class="footer">

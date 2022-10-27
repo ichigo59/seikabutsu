@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Seikabutsu</title>
+        <title>Sekatabi</title>
     </head>
     
     <body class="ichiran_body">
@@ -25,7 +25,7 @@
                         <h2 class="ichiran_h2">Comment</h2>
                             <p class="ichiran_p"><?php echo e($post->body); ?></p>
                         <h2 class="ichiran_h2">Photo</h2>
-                            <img src=" <?php echo e(asset('storage/disney.jpg')); ?>">
+                            <img src=" <?php echo e(asset($post->imgpath)); ?>">
                     </div>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div class='ichiran_paginate'>

@@ -97,19 +97,21 @@ class PostController extends Controller
     }
     
     
-    public function store(PostRequest $request ,Post $post) 
+    public function store(Request $request ,Post $post) 
     {
         $input = $request['post'];
-        $post->fill($input)->save();
-        
-        $image = $request->file('post.imgpath')->storeAs('public/photograph',$post->id.'post.jpeg' );
-        
-       
-        return redirect('/show/');
+        $post->fill($input);
+        $file_name = $request->file('imgpath')->getClientOriginalName(); /*保存時の画像の名前デフォルト*/
+        $image = $request->file('imgpath')->storeAs('public', $file_name);/*storageフォルダ→app→public*/
+        $post->imgpath = "/storage/" . $file_name;/*読みだす前のパス指定　storageと指定する*/
+        $post->user_id = Auth::id();/*追加*/
+        $post->save();
+
+        return redirect('/show/' . $post->id); /*webの{post}と同じ意味*/
     }
 
     
-    public function update(PostRequest $request, Post $post)
+    public function update(Request $request, Post $post)
     {
         $input_post = $request['post'];
         $input_post += ['user_id' => $request->user()->id];   
