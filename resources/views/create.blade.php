@@ -26,11 +26,11 @@
                 </h2>
                 {{--<div class="form-group row">--}}
                         <div class="create_category_form">
-                            <select class="category_form" id="sel01" name="sel01">
-                                <option value="1">食べ物</option>
-                                <option value="2" selected>建造物</option>
-                                <option value="3" selected>観光地</option>
-                                <option value="4" selected>穴場スポット</option>
+                            <select class="category_form" id="sel01" name="post[category]">
+                                <option value="食べ物" selected>食べ物</option>
+                                <option value="建造物" >建造物</option>
+                                <option value="観光地" >観光地</option>
+                                <option value="穴場スポット" >穴場スポット</option>　{{--selected=最初から選択--}}
                                 
                             </select>
                         </div>
@@ -60,7 +60,7 @@
                     ・ ・ Photograph ・ ・
                 </h2>
                 <h3 class ="create_h3">
-                    <input type="file" name="post[imgpath]" accept=".jpg,.jpeg,.png">
+                    <input type="file" name="imgpath" accept=".jpg,.jpeg,.png">
                 </h3>
             </div>
                 

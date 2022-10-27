@@ -3,21 +3,6 @@
     <div class= "chat_all_body">
         <h1 class="chat_h1">・ ・ ・チャット・ ・ ・</h1>
         <div class-="chat_body">
-<<<<<<< HEAD:resources/views/User/Components/chat.blade.php
-=======
-            <form method="POST" action="{{route('add')}}">
-                @csrf
-<<<<<<< HEAD:resources/views/chat.blade.php
-                
-    <div class="chat-container row justify-content-center">
-    <div class="chat-area">
-        <div class="card">
-            <div class="card-header">Comment</div>
-            <div class="card-body chat-card">
-                @include
-                
-=======
->>>>>>> origin/master:resources/views/chat.blade.php
             <div class="chat-container row justify-content-center"> {{--一覧ボックス--}}
                 <div class="chat-area">
                     <div class="card">
@@ -29,11 +14,6 @@
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD:resources/views/User/Components/chat.blade.php
-=======
->>>>>>> seika_03:resources/views/User/Components/chat.blade.php
-            </div>
->>>>>>> origin/master:resources/views/chat.blade.php
         </div>
             
         <div class="comment-container row justify-content-center">　{{--入力ボックス--}}

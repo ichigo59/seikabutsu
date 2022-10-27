@@ -25,7 +25,7 @@
                         <h2 class="ichiran_h2">Comment</h2>
                             <p class="ichiran_p">{{ $post->body }}</p>
                         <h2 class="ichiran_h2">Photo</h2>
-                            <img src=" {{ asset('storage/disney.jpg')}}">
+                            <img src=" {{ asset($post->imgpath)}}">
                     </div>
                 @endforeach
             </div class='ichiran_paginate'>
