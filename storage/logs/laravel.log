@@ -5386,6 +5386,9 @@
 #48 /home/ec2-user/environment/blog/server.php(21): require_once('...')
 #49 {main}
 "} 
+<<<<<<< HEAD
+[2022-10-26 04:30:49] local.ERROR: Undefined array key 1 {"userId":1,"exception":"[object] (ErrorException(code: 0): Undefined array key 1 at /home/ec2-user/environment/blog/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesLoops.php:95)
+=======
 [2022-10-24 06:54:28] local.ERROR: Undefined variable $post (View: /home/ec2-user/environment/blog/resources/views/ichiran.blade.php) {"userId":1,"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable $post (View: /home/ec2-user/environment/blog/resources/views/ichiran.blade.php) at /home/ec2-user/environment/blog/resources/views/ichiran.blade.php:39)
 [stacktrace]
 #0 /home/ec2-user/environment/blog/resources/views/ichiran.blade.php(39): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
@@ -14685,6 +14688,7 @@
 #60 {main}
 "} 
 [2022-10-26 14:50:52] local.ERROR: Undefined array key 1 {"userId":1,"exception":"[object] (ErrorException(code: 0): Undefined array key 1 at /home/ec2-user/environment/blog/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesLoops.php:95)
+>>>>>>> seika_03
 [stacktrace]
 #0 /home/ec2-user/environment/blog/vendor/laravel/framework/src/Illuminate/View/Compilers/Concerns/CompilesLoops.php(95): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
 #1 /home/ec2-user/environment/blog/vendor/laravel/framework/src/Illuminate/View/Compilers/BladeCompiler.php(380): Illuminate\\View\\Compilers\\BladeCompiler->compileForeach()
