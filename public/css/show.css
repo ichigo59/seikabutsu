@@ -1,0 +1,41 @@
+.show_all_body {
+   background-color: #DB7093; /*濃いピンク*/
+ }
+ 
+ .show{
+    background-color: #B3DDE6; /*地球背景の青*/ 
+    color: #808080;
+ }
+ 
+ small{
+    color: #DB7093;
+    background-color: #FFF0F5;
+    font-weight: bold;
+ }
+ 
+ p{
+    color: #FFF0F5;
+ }
+ 
+ .h2_show_comment{
+    font-size: 20px;
+ }
+ .show_title{
+    color: #ADD8E6;
+    text-align:center;
+    background-color: #FFE4E1;
+    font-family: "Yu Gothic";
+    font-size: 50px;
+    font-weight: 600;
+ }
+ 
+ .show_contents{
+    background-color: #B3DDE6;
+ }
+ 
+  .show_back{
+    font-size: 15px;
+    font-family: "Yu Gothic";
+    font-weight: bold;
+    text-align: center;
+ }

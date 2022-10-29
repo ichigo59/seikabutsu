@@ -8,7 +8,7 @@
         <title>Sekatabi</title>
     </head>
     
-    <body class="ichiran_body">
+    <body class="ichiran">
         
 
         <?php $__env->startSection('content'); ?>
@@ -18,13 +18,13 @@
                 <?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                     <small class="toukousyamei"><?php echo e($post->user->name); ?></small>
                     <div class="ichiran_4_body">
-                        <h2 class="ichiran_h2">Category</h2>
-                            <p class="ichiran_p"><?php echo e($post->category); ?></p>
-                        <h2 class="ichiran_h2">Title</h2>
-                            <p class="ichiran_p"><?php echo e($post->title); ?></p>
-                        <h2 class="ichiran_h2">Comment</h2>
-                            <p class="ichiran_p"><?php echo e($post->body); ?></p>
-                        <h2 class="ichiran_h2">Photo</h2>
+                        <p class="ichiran_p">Category</p>
+                            <h2 class="ichiran_h2"><?php echo e($post->category); ?></h2>
+                        <p class="ichiran_o">Title</p>
+                            <h2 class="ichiran_h2"><?php echo e($post->title); ?></h2>
+                        <p class="ichiran_p">Comment</p>
+                            <h2 class="ichiran_h2_comment"><?php echo e($post->body); ?></h2>
+                        <p class="ichiran_p">Photo</p>
                             <img src=" <?php echo e(asset($post->imgpath)); ?>">
                     </div>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

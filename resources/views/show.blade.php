@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-@extends('layouts.app')
-
-@section('content')
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <title>Sekatabi</title>
-    </head>
-    <body>
-        <small>{{ $post->user->name }}</small>
-        <h1 class="title"> 投稿完了</h1>
-            <h2>Category</h2>
-                <p>{{ $post->category }}</p>
-            <h2>Title</h2>
-                <p>{{ $post->title }}</p>
-            <h2>Comment</h2>
-                <p>{{ $post->body }}</p>
-            <h2>Photo</h2>
+<link href="{{ asset('css/show.css') }}" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <title>Sekatabi</title>
+</head>
+<body class ="show">
+    @extends('layouts.app')
+
+    @section('content')
+<div class = "show_all_body">
+    <h1 class="show_title"> ・ ・ ・ 投稿完了 ・ ・ ・</h1>
+    <div class="show_contents">
+    <small>{{ $post->user->name }}</small>
+    <p>Category</p>
+    <h2>{{ $post->category }}</h2>
+    <p>Title</p>
+    <h2>{{ $post->title }}</h2>
+    <p>Comment</p>
+    <h2 class="h2_show_comment">{{ $post->body }}</h2>
+    <p>Photo</p>
     
-        <div class="content">
-            <div class=" content_post">
-                <img src=" {{ asset($post->imgpath)}}">
-            </div>  
-        </div>
-        </div class="footer">
-            <a href="/">ホームへ戻る</a>
-        </div>
-    </body>
+    <div class="content">
+        <div class=" content_post">
+            <img src=" {{ asset($post->imgpath)}}">
+        </div>  
+    </div>
+    <div class="show_back">
+        <a href="/">〖ホームへ戻る〗</a>
+    </div>
+    </div>
+</div>
+    @endsection
+</body>
 </html>
 
-@endsection
