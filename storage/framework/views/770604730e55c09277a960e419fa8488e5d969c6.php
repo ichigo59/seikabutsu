@@ -1,5 +1,6 @@
     
     <?php $__env->startSection('content'); ?>
+    <body class= "chat_body">
     <div class= "chat_all_body">
         <h1 class="chat_h1">・ ・ ・チャット・ ・ ・</h1>
         <div class-="chat_body">
@@ -30,6 +31,7 @@
         </div>
     </div>
     <div class="chat_back"><a href="/">〖ホームへ戻る〗</a></div>
+    </body>
     <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/ec2-user/environment/blog/resources/views/User/Components/chat.blade.php ENDPATH**/ ?>

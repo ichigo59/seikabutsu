@@ -1,5 +1,6 @@
     @extends('layouts.app')
     @section('content')
+    <body class= "chat_body">
     <div class= "chat_all_body">
         <h1 class="chat_h1">・ ・ ・チャット・ ・ ・</h1>
         <div class-="chat_body">
@@ -30,4 +31,5 @@
         </div>
     </div>
     <div class="chat_back"><a href="/">〖ホームへ戻る〗</a></div>
+    </body>
     @endsection
