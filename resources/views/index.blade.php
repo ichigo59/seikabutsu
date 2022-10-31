@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{{Auth::user()->name}}
 <link href="{{ asset('css/index.css') }}" rel="stylesheet">
 
     <head>

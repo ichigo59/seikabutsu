@@ -21,6 +21,9 @@
     <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/index.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('css/chat.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('css/explanation.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('css/create.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('css/show.css')); ?>" rel="stylesheet">
     
 </head>
 <body>
@@ -28,8 +31,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo e(url('/')); ?>">
-                    <?php echo e(config('app.name', 'Laravel')); ?>
-
+                    Sekatabi
+                    
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<?php echo e(__('Toggle navigation')); ?>">
                     <span class="navbar-toggler-icon"></span>

@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<?php echo e(Auth::user()->name); ?>
-
 <link href="<?php echo e(asset('css/index.css')); ?>" rel="stylesheet">
 
     <head>

@@ -59,7 +59,7 @@
                 </h2>
                 <h3 class ="create_h3">
                     {{--<input type="file" name="imgpath" accept=".jpg,.jpeg,.png">--}}
-                    <img class="imgpath" src="{{  $post->imgpath }}" alt="画像">{{--Cloudinary--}}
+                    <img class="imgpath" src="imgpath" alt="画像">{{--Cloudinary--}}
                 </h3>
             </div>
                 

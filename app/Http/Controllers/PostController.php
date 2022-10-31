@@ -103,7 +103,8 @@ class PostController extends Controller
         $input = $request['post'];
         $post->fill($input);
         /*$file_name = $request->file('imgpath')->getClientOriginalName();*/ /*保存時の画像の名前デフォルト*/
-        $uploaded_url=Cloudinary::upload($request->file('imgpath')->getRealPath())->getSecurePath();/*Cloudinary*/
+        /*$uploaded_url=Cloudinary::upload($request->file('imgpath')->getRealPath())->getSecurePath();*//*Cloudinary*/
+        $uploaded_url=Cloudinary::upload($request->file('imgpath'))->getClientOriginalName();/*Cloudinary*/
         $post->imgpath = $uploaded_url;/*Cloudinary*/
         $image = $request->file('imgpath')->storeAs('public', $file_name);/*storageフォルダ→app→public*/
         $post->imgpath = "/storage/" . $file_name;/*読みだす前のパス指定　storageと指定する*/

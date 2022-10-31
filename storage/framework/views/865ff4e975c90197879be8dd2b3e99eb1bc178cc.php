@@ -58,7 +58,8 @@
                     ・ ・ Photograph ・ ・
                 </h2>
                 <h3 class ="create_h3">
-                    <input type="file" name="imgpath" accept=".jpg,.jpeg,.png">
+                    
+                    <img class="imgpath" src="<?php echo e($post->imgpath); ?>" alt="画像">
                 </h3>
             </div>
                 
