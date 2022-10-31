@@ -1,10 +1,16 @@
+.chat{
+  text-align: center;
+}
 .chat_body{
   background-color: #B3DDE6; /*地球背景の青*/
+  width: 100%;
 }
 
 .chat_all_body{
   background-color: #DB7093; /*濃いピンク*/
 }
+
+
 
 .chat_h1{
   color: #ADD8E6;
@@ -15,26 +21,24 @@
   font-weight: 600;
 }
 
-.chat{
-  background-color: #B3DDE6; /*地球背景の青*/
-  text-align:center;
-  font-family: "Yu Gothic";
-}
-
 .chat_body{
   background-color: #B3DDE6; /*地球背景の青*/
   font-family: "Yu Gothic";
 }
 
-.chat-container{
-    background-color: #B3DDE6; /*地球背景の青*/
-    font-family: "Yu Gothic";
-
+.form-control{
+  width: 800px; 
+  text-align: center;
 }
 
 .chat-container {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Yu Gothic";
+  text-align: center;
   width: 100%;
   height: 100%;
+  background-color: #B3DDE6; /*地球背景の青*/
 }
 
 .chat-card { /*一覧ボックスのサイズ*/
@@ -43,17 +47,28 @@
   background-color: #F0FFFF;　/*水色*/
 }
 
+button { 
+  width: 100px;
+}
+
+.nyuuryokuandsoushin{
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .chat-area {
-  width: 70%;
+  width: 85%;
+  background-color: #B3DDE6; /*地球背景の青*/
 }
 
 .comment-container {
-  bottom: 20px;
-  text-align: center;
-  width: 285%;
+  bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   font-family: "Yu Gothic";
   background-color: #B3DDE6; /*地球背景の青*/
+  text-align: center;
 }
 
 .comment-area {
@@ -86,6 +101,10 @@
   width: 70%;
   color: #808080;
   font-family: "Yu Gothic";
+}
+
+.soushinbotan{
+  text-align: center;
 }
 
  .chat_back{

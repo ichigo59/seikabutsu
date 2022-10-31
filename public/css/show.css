@@ -33,6 +33,12 @@
     background-color: #B3DDE6;
  }
  
+ img{
+    width: 750px;
+    height: 600px;
+    object-fit: contain;
+ }
+ 
   .show_back{
     font-size: 15px;
     font-family: "Yu Gothic";
