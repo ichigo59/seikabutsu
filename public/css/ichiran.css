@@ -25,7 +25,6 @@
    background-color: #FFF0F5;
    color: #DB7093;
    font-weight: bold;
-   
 }
 
 .ichiran_4_body{
@@ -47,6 +46,12 @@
 
 .ichiran_p{
    background-color: #B3DDE6;
+}
+
+img{
+   width: 500px;
+   height: 350px;
+   object-fit: contain;
 }
 
  .ichiran_back{
