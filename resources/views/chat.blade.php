@@ -3,8 +3,6 @@
     <div class= "chat_all_body">
         <h1 class="chat_h1">・ ・ ・チャット・ ・ ・</h1>
         <div class-="chat_body">
-<<<<<<< HEAD:resources/views/User/Components/chat.blade.php
-=======
             <form method="POST" action="{{route('add')}}">
                 @csrf
 <<<<<<< HEAD:resources/views/chat.blade.php

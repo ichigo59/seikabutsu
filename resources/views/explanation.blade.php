@@ -16,13 +16,13 @@
     @section('content')
     
     <div class="explanation_all_body">
-        <h1 class="explanation_h1_title">・ ・ ・サイト説明・ ・ ・</h1>
+        <h1 class="explanation_h1_title">・ サイト説明 ・</h1>
         <div class = "explanation_body">
             <h2 class="explanation_h2_title">【サイトの特徴】</h2>
              <explanation_h3>
                 <h3>「国内にいても海外旅行をした気分になれる！」</h3>
                 <h3>「誰かのオススメをリアルタイムで聞けて、現地でも大活躍！」</h3>
-            </h3>
+            
             <h2 class="explanation_h2_title">【使い方】</h2>
             <explanation_h3>
                 <h3>・オススメの食べ物や建造物、観光地、穴場スポットを投稿しよう！</h3>
@@ -34,7 +34,7 @@
                 <h3>・「〇〇の周辺で、オススメなごはん屋さん知りませんか？」と問いかけてみよう！</h3>
                 <h3>・返信しよう！</h3>
             </h3>
-        <div class='explanation_back'><a href="/">〖ホームへ戻る〗</a></div>
+        <div class='explanation_back'><a href="/"><img class="Hikouki_img" src="https://illustimage.com/photo/dl/5115.png?20171228" alt="飛行機" />ホームへ戻る</a></div>
         </div>
     </div>
     

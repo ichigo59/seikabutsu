@@ -1,5 +1,9 @@
 .create_all_body {
    background-color: #DB7093; /*濃いピンク*/
+   text-align:center;
+   max-width: 80%;
+   line-height: 2rem;
+   margin: 0 auto;
  }
  
  .create_h1_title{
@@ -7,18 +11,17 @@
     text-align:center;
     background-color: #FFE4E1;
     font-family: "Yu Gothic";
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
 }
 
 .create{
    background-color: #B3DDE6;
-   text-align:center;
 }
     
 .create_body {
    background-color: #B3DDE6; /*地球背景の青*/
-   text-align:center;
+   text-align: center;
  }
  
  .create_h2{    /*投稿内容の題名*/
