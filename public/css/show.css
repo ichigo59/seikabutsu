@@ -1,5 +1,9 @@
 .show_all_body {
    background-color: #DB7093; /*濃いピンク*/
+   max-width: 80%;
+   line-height: 2rem;
+   margin: 0 auto;
+   text-align: center;
  }
  
  .show{
@@ -25,7 +29,7 @@
     text-align:center;
     background-color: #FFE4E1;
     font-family: "Yu Gothic";
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
  }
  
@@ -33,7 +37,7 @@
     background-color: #B3DDE6;
  }
  
- img{
+ .show_img{
     width: 750px;
     height: 600px;
     object-fit: contain;

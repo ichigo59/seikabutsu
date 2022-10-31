@@ -1,5 +1,9 @@
  .explanation_all_body {
    background-color: #DB7093; /*濃いピンク*/
+   max-width: 80%;
+   text-align: center;
+   line-height: 2rem;
+   margin: 0 auto;
  }
  
  .explanation_h1_title{
@@ -7,7 +11,7 @@
     color: #ADD8E6;
     background-color: #FFE4E1;
     font-family: "Yu Gothic";
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
  }
  
@@ -28,11 +32,18 @@
    font-family: "Yu Gothic";
  }
  
+  .Hikouki_img{
+   width: 70px;
+   height: 50px;
+   text-align:center;
+ }
+ 
  .explanation_back{
    font-size: 15px;
    font-family: "Yu Gothic";
    font-weight: bold;
-   text-align: left;
+   text-align: center;
+   background-color: #B3DDE6; /*地球背景の青*/
  }
  
 

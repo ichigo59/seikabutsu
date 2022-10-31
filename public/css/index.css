@@ -1,6 +1,9 @@
-.index{
-    background-color: #B3DDE6;  
-}
+/*.index{
+    background-color: #B3DDE6;
+    max-width: 80%;
+    line-height: 2rem;
+    margin: 0 auto;
+}*/
     
  .index_title_name{
     text-align:center;
@@ -9,7 +12,7 @@
  }
  
  .index_h1{
-   font-size: 60px;
+   font-size: 45px;
    font-weight: 600;
    font-family: "Yu Gothic";
  }
@@ -21,7 +24,11 @@
  }
  
  .index_all_body{
-   background-color: #E0FFFF;
+   /*background-color: #E0FFFF;*/
+   background-color: #B3DDE6;
+    max-width: 80%;
+    line-height: 2rem;
+    margin: 0 auto;
  }
  
  .index_title_name{
@@ -36,6 +43,12 @@
    text-align:center;
  }
  
+ .index_img{
+   width: 450px;
+   height: 300px;
+   text-align:center;
+ }
+ 
  .posts{
   text-align: center;
   color: #DC143C;
@@ -43,7 +56,8 @@
  
  .index_button{
    text-align: center;
-   font-size: 30px;
+   font-size: 15px;
+   font-weight: bold;
    background-color: #FFE4E1;
    font-family: "Yu Gothic";
  }

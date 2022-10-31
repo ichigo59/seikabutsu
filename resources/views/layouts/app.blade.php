@@ -26,12 +26,12 @@
     <link href="{{ asset('css/show.css') }}" rel="stylesheet">
     
 </head>
-<body>
+<body class ="app_body">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Sekatabi
+                    Sekatabi<img class="Hikouki_img" src="https://illust8.com/wp-content/uploads/2019/04/ashiato_illust_3705-400x349.png" alt="足跡" />
                     {{--{{ config('app.name', 'Sekatabi') }}--}}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
