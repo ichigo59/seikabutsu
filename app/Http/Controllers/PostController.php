@@ -8,6 +8,7 @@ use App\Http\Requests\PostRequest;
 use Illuminate\Http\Request;
 use App\Comment;
 use Illuminate\Support\Facades\Auth;
+use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
 
 class PostController extends Controller
@@ -101,7 +102,9 @@ class PostController extends Controller
     {
         $input = $request['post'];
         $post->fill($input);
-        $file_name = $request->file('imgpath')->getClientOriginalName(); /*保存時の画像の名前デフォルト*/
+        /*$file_name = $request->file('imgpath')->getClientOriginalName();*/ /*保存時の画像の名前デフォルト*/
+        $uploaded_url=Cloudinary::upload($request->file('imgpath')->getRealPath())->getSecurePath();/*Cloudinary*/
+        $post->imgpath = $uploaded_url;/*Cloudinary*/
         $image = $request->file('imgpath')->storeAs('public', $file_name);/*storageフォルダ→app→public*/
         $post->imgpath = "/storage/" . $file_name;/*読みだす前のパス指定　storageと指定する*/
         $post->user_id = Auth::id();/*追加*/
