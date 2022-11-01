@@ -16,7 +16,7 @@
         <div class="create_all_body">
         <h1 class="create_h1_title">・ 投稿 ・</h1>
         <div class ="create_body">
-    <form action="/cloudinary" method="POST" enctype="multipart/form-data">
+    <form action="/posts" method="POST" enctype="multipart/form-data">
         @csrf
             
         <div class="create_category">

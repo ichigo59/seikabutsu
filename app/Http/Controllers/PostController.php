@@ -102,10 +102,18 @@ class PostController extends Controller
         return view('cloudinary');  //cloudinary.blade.phpを表示
     }
 
-    public function cloudinary_store(Request $request)
+    public function store(Request $request,Post $post)
     {
-        //cloudinaryへ画像を送信し、画像のURLを$image_urlに代入している
+        $input = $request['post'];
+        $post->fill($input);
         $image_url = Cloudinary::upload($request->file('imgpath')->getRealPath())->getSecurePath();
+        $post->imgpath = $image_url;/*読みだす前のパス指定　storageと指定する*/
+        $post->user_id = Auth::id();/*追加*/
+        $post->save();
+        return redirect('/show/' . $post->id);
+
+        //cloudinaryへ画像を送信し、画像のURLを$image_urlに代入している
+        
         //dd($image_url);  //画像のURLを画面に表示
     }
     
