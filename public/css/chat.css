@@ -1,3 +1,14 @@
+.chat{
+  background-color: #B3DDE6; /*地球背景の青*/
+  max-width: 80%;
+  text-align: center;
+  line-height: 2rem;
+  margin: 0 auto;
+}
+.chat_body{
+  background-color: #B3DDE6; /*地球背景の青*/
+}
+
 .chat_all_body{
   background-color: #DB7093; /*濃いピンク*/
 }
@@ -90,8 +101,13 @@ button {
   font-size: 10px;
   margin-top: 10px;
   margin-left: 5px;
+  width: 70%;
   color: #808080;
   font-family: "Yu Gothic";
+}
+
+.soushinbotan{
+  text-align: center;
 }
 
  .chat_back{

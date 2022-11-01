@@ -7,35 +7,59 @@
    color: #ADD8E6;
    background-color: #FFE4E1;
    font-family: "Yu Gothic";
-   font-size: 50px;
+   font-size: 45px;
    font-weight: 600;
 }
 
-.ichiran_body{
+.ichiran{
+   background-color: #B3DDE6;
+   max-width: 80%;
+   line-height: 2rem;
+   margin: 0 auto;
+}
+
+.ichiran_contents{
    background-color: #B3DDE6;
 }
 
 .toukousyamei{
-   font-size: 20px;
    font-family: "Yu Gothic";
    color: #808080;
+   background-color: #FFF0F5;
+   color: #DB7093;
+   font-weight: bold;
 }
 
 .ichiran_4_body{
    font-family: "Yu Gothic";
    color: #808080;
+   background-color: #B3DDE6;
 }
 
 .ichiran_h2{
-   font-size: 25px;
    font-weight: 600;
+   background-color: #B3DDE6;
+}
+
+.ichiran_h2_comment{
+   font-size: 20px;
+   font-weight: 600;
+   background-color: #B3DDE6;
 }
 
 .ichiran_p{
-   font-size: 40px;
+   background-color: #B3DDE6;
+   font-weight: bold;
+}
+
+.ichiran_img{
+   width: 400px;
+   height: 300px;
+   object-fit: contain;
 }
 
  .ichiran_back{
+   text-align: center;
    font-size: 15px;
    font-weight: bold;
    font-family: "Yu Gothic";
