@@ -23,8 +23,7 @@
     
     <div class="content">
         <div class=" content_post">
-            {{--<img class="show_img" src=" {{ asset($post->imgpath)}}">--}}
-            <img class="show_img" src="{{　$post->imgpath }}">
+            <img class="show_img" src="{{ $post->imgpath }}">
         </div>  
     </div>
     <div class="show_back">

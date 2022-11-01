@@ -26,8 +26,6 @@ Route::group(['middleware' => ['auth']], function(){
     Route::get('/posts/explanation', 'PostController@explanation');
     Route::get('/posts/{post}', 'PostController@index');
     Route::post('/posts', 'PostController@store');
-    Route::get('/cloudinary','PostController@cloudinary');  //投稿フォームの表示
-    Route::post('/cloudinary', 'PostController@cloudinary_store');  //画像保存処理
     Route::get('/user', 'UserController@index');
     Route::post('/add', 'PostController@add')->name('add');
 });

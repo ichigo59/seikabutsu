@@ -10,7 +10,7 @@
 
     <?php $__env->startSection('content'); ?>
 <div class = "show_all_body">
-    <h1 class="show_title"> ・ ・ ・ 投稿完了 ・ ・ ・</h1>
+    <h1 class="show_title">・ 投稿完了 ・</h1>
     <div class="show_contents">
     <small><?php echo e($post->user->name); ?></small>
     <p>Category</p>
@@ -23,11 +23,12 @@
     
     <div class="content">
         <div class=" content_post">
-            <img src=" <?php echo e(asset($post->imgpath)); ?>">
+            <img class="show_img" src="<?php echo e($post->imgpath); ?>">
         </div>  
     </div>
     <div class="show_back">
-        <a href="/">〖ホームへ戻る〗</a>
+        <a href="/posts/ichiran"><img class="Hikouki_img" src="https://illustimage.com/photo/dl/5115.png?20171228" alt="飛行機" />皆の投稿を見る</a>
+        <a href="/"><img class="Hikouki_img" src="https://illustimage.com/photo/dl/5115.png?20171228" alt="飛行機" />ホームへ戻る</a>
     </div>
     </div>
 </div>
